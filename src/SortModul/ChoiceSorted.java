@@ -13,7 +13,7 @@ public class ChoiceSorted
         }
     }
 
-    private static void choiseSorted(Integer[] array)
+    public static void choiseSorted(Integer[] array)
     {
         for(int i = 0; i < array.length; i++)
         {
