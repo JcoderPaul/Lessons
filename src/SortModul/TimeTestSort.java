@@ -22,7 +22,7 @@ public class TimeTestSort
         double timeStop2 = System.nanoTime();
         System.out.println((timeStop2 - timeStart2)/1000000 + " ms");
     }
-
+/**
     protected static int actionMethod()
     {
         int arrVolume;
@@ -38,6 +38,19 @@ public class TimeTestSort
             } else
                 System.out.println("Вы ввели что-то другое! Повторите попытку.");
         }
+        return arrVolume;
+    }
+ **/
+    //Более короткий метод actionMethod, хотя как я понимаю можно еще короче ))
+    protected static int actionMethod(){
+        int arrVolume;
+        Scanner vol = new Scanner(System.in);
+        System.out.print("Введите размер массива (целое число): ");
+        while(!vol.hasNextInt()){
+            vol.next();
+            System.out.println("Вы ввели что-то другое! Повторите попытку.");
+        }
+        arrVolume = vol.nextInt();
         return arrVolume;
     }
 }
