@@ -51,6 +51,7 @@ public class TimeTestSort
             System.out.println("Вы ввели что-то другое! Повторите попытку.");
         }
         arrVolume = vol.nextInt();
+        vol.close();
         return arrVolume;
     }
 }
